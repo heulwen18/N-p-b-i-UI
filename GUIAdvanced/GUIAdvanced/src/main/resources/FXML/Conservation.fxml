@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="480.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConservationController">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="720.0" style="-fx-border-color: transparent;">
+               <children>
+                  <ImageView fx:id="menu" fitHeight="26.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/a.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="55.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-male-user-96.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="221.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="167.0" text="Mr. A" textFill="#868686">
+                           <font>
+                              <Font name="Ebrima" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Active Now" textFill="#757575">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="calling" fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-call-80.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="video" fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-video-call-80.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-menu-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="960.0" prefWidth="720.0" styleClass="light_gray" vbarPolicy="NEVER">
+               <content>
+                  <Pane prefHeight="615.0" prefWidth="480.0" styleClass="light_gray">
+                     <children>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="7.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="46.0" layoutY="14.0" lineSpacing="1.0" prefHeight="55.0" prefWidth="102.0" text="Hello" textFill="#5b5b5b" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="incoming_bubble" />
+                              <String fx:value="transparent" />
+                           </styleClass>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="439.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="240.0" layoutY="90.0" lineSpacing="1.0" prefHeight="55.0" prefWidth="202.0" text="Hi, how're u ?" textFill="#5b5b5b" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="incoming_bubble" />
+                              <String fx:value="transparent" />
+                              <String fx:value="send" />
+                           </styleClass>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="7.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="186.0" lineSpacing="1.0" prefHeight="98.0" prefWidth="221.0" text="I'm fine thank u. It's time to go now." textFill="#5b5b5b" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="incoming_bubble" />
+                              <String fx:value="transparent" />
+                           </styleClass>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="439.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="389.0" lineSpacing="1.0" prefHeight="98.0" prefWidth="319.0" text="You have to drag and enlarge the size" textFill="#5b5b5b" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="incoming_bubble" />
+                              <String fx:value="transparent" />
+                           </styleClass>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="7.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="651.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="360.0" layoutY="308.0" lineSpacing="1.0" prefHeight="55.0" prefWidth="79.0" text="Okey" textFill="#5b5b5b" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="incoming_bubble" />
+                              <String fx:value="transparent" />
+                              <String fx:value="send" />
+                           </styleClass>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="41.0" layoutX="439.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-male-user-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="360.0" layoutY="520.0" lineSpacing="1.0" prefHeight="55.0" prefWidth="79.0" text="Okey" textFill="#5b5b5b" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="incoming_bubble" />
+                              <String fx:value="transparent" />
+                              <String fx:value="send" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="720.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-smile-100%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-attachment-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField prefHeight="52.0" prefWidth="535.0" promptText="Message" styleClass="text_fie">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri" size="25.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="51.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="21.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../Image/icons8-send-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Circle centerY="50.0" fill="#4fa857" layoutX="78.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

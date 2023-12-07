@@ -1,0 +1,30 @@
+.dark_back {
+    -fx-background-color: #46476a;
+}
+.gray_back {
+    -fx-background-color: #636566;
+}
+
+.transparent{
+    -fx-background-color: rgba( 0,0,0,0);
+}
+.radius {
+    -fx-background-radius: 100px;
+}
+.light_gray {
+    -fx-background-color: #dadada;
+}
+.incoming_bubble {
+    -fx-background-color: #faf4f4;
+    -fx-background-radius: 20px;
+}
+.send {
+    -fx-background-color: #43da4f;
+}
+.text_fie{
+    -fx-background-radius: 15px;
+}
+.back_call1 {
+    -fx-background-color: #e1e1fa
+;
+}
